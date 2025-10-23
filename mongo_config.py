@@ -8,10 +8,10 @@ load_dotenv()
 db_username = os.getenv("DB_USERNAME")
 db_password = os.getenv("DB_PASSWORD")
 
-uri = f"mongodb+srv://{db_username}:{db_password}@backenddb.2ansun2.mongodb.net/?retryWrites=true&w=majority&appName=BackendDB"
+uri = f""
 
 client = MongoClient(uri, server_api=ServerApi("1"))
 
-db = client.todo_db
-collection = db["todo_data"]
+db = client.
+collection = db[""]
 
