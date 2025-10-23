@@ -90,3 +90,8 @@ Use **Postman** or **Insomnia** to test the CRUD endpoints.
 | DELETE | /soft_delete/{task_id} | **Soft-delete** a task (can be recovered).        |
 | DELETE | /perm_delete/{task_id} | **Permanently** delete a task.                    |
 
+---
+
+## 🛠️ Custom OpenAPI Spec
+By default, FastAPI automatically generates the OpenAPI spec. If you'd' like to customize it, you will need to first generate the default spec by running ```generate_openapi.py```. This will create a folder in the root directory (```/docs```) containing the generated spec.
+> **Note:** Any modifications to the spec should also be reflected in the API code. For example, adding new fields to a request in the spec won't automatically make the API handle them.
